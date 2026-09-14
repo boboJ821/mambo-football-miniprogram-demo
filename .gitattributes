@@ -7,3 +7,6 @@ LICENSE text eol=lf
 *.md text eol=lf
 *.wxml text eol=lf
 *.wxss text eol=lf
+*.jpg -text
+*.mp4 -text
+*.png -text
