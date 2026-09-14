@@ -1,0 +1,11 @@
+<view class="page-shell">
+  <text class="eyebrow">PREDICTIONS</text>
+  <text class="page-title">比赛预测</text>
+  <text class="page-subtitle">三项概率来自本地演示数据。</text>
+
+  <view class="tabs">
+    <view class="tab {{activeGroup === item.key ? 'active' : ''}}" wx:for="{{tabs}}" wx:key="key" data-key="{{item.key}}" bindtap="changeGroup">{{item.label}}</view>
+  </view>
+
+  <match-card wx:for="{{matches}}" wx:key="id" match="{{item}}" />
+</view>

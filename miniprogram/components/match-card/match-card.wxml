@@ -1,0 +1,30 @@
+<view class="match-card">
+  <view class="match-meta">
+    <text>{{match.competition}}</text>
+    <text>{{match.date}}</text>
+  </view>
+
+  <view class="teams-row">
+    <view class="team">
+      <view class="team-badge">{{match.homeShort}}</view>
+      <text>{{match.home}}</text>
+    </view>
+    <view class="versus">VS</view>
+    <view class="team">
+      <view class="team-badge away">{{match.awayShort}}</view>
+      <text>{{match.away}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{showProbabilities}}" class="probabilities">
+    <view class="probability-item"><text>主胜</text><text>{{match.homeProbability}}%</text></view>
+    <view class="probability-item"><text>平局</text><text>{{match.drawProbability}}%</text></view>
+    <view class="probability-item"><text>客胜</text><text>{{match.awayProbability}}%</text></view>
+  </view>
+
+  <view class="pick-row">
+    <text>模型倾向</text>
+    <text class="pick-value">{{match.pick}}</text>
+  </view>
+</view>
+

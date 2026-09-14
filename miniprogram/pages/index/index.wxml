@@ -1,0 +1,18 @@
+<view class="page-shell">
+  <view class="hero">
+    <text class="eyebrow">MAMBO FOOTBALL</text>
+    <text class="page-title">读懂比赛，\n看见概率</text>
+    <text class="page-subtitle">用清晰的数据卡片整理赛程、赛前概率与历史表现。</text>
+    <button class="primary-action" bindtap="openPredictions">查看今日预测</button>
+  </view>
+
+  <view class="metric-grid">
+    <view class="metric-card surface-card" wx:for="{{metrics}}" wx:key="label">
+      <text class="metric-value">{{item.value}}</text>
+      <text class="metric-label">{{item.label}}</text>
+    </view>
+  </view>
+
+  <text class="section-title">焦点比赛</text>
+  <match-card wx:for="{{featuredMatches}}" wx:key="id" match="{{item}}" />
+</view>

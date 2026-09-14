@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "曼波足球",
+  "usingComponents": {
+    "match-card": "/components/match-card/match-card"
+  }
+}

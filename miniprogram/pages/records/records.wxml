@@ -1,0 +1,32 @@
+<view class="page-shell">
+  <text class="eyebrow">PERFORMANCE</text>
+  <text class="page-title">历史战绩</text>
+  <text class="page-subtitle">用于展示模型表现的数据看板。</text>
+
+  <view class="summary-card surface-card">
+    <view class="accuracy-ring">
+      <text>{{summary.accuracy}}</text>
+      <text>命中率</text>
+    </view>
+    <view class="summary-grid">
+      <view><text>{{summary.total}}</text><text>已结算</text></view>
+      <view><text class="success">{{summary.correct}}</text><text>命中</text></view>
+      <view><text class="failure">{{summary.wrong}}</text><text>未命中</text></view>
+    </view>
+  </view>
+
+  <text class="section-title">最近记录</text>
+  <view class="record-card surface-card" wx:for="{{records}}" wx:key="id">
+    <view class="record-date">{{item.date}}</view>
+    <view class="record-match">
+      <text>{{item.home}}</text>
+      <text class="score">{{item.score}}</text>
+      <text>{{item.away}}</text>
+    </view>
+    <view class="record-result">
+      <text>预测：{{item.pick}}</text>
+      <text class="result-tag {{item.hit ? 'hit' : 'miss'}}">{{item.result}}</text>
+    </view>
+  </view>
+</view>
+

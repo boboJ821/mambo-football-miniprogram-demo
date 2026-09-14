@@ -1,0 +1,47 @@
+.hero {
+  padding: 44rpx 8rpx 24rpx;
+}
+
+.primary-action {
+  width: 290rpx;
+  margin: 34rpx 0 0;
+  border-radius: 999rpx;
+  background: #22c55e;
+  color: #041109;
+  font-size: 26rpx;
+  font-weight: 800;
+}
+
+.primary-action::after {
+  border: 0;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14rpx;
+  margin-top: 32rpx;
+}
+
+.metric-card {
+  padding: 24rpx 10rpx;
+  text-align: center;
+}
+
+.metric-value,
+.metric-label {
+  display: block;
+}
+
+.metric-value {
+  color: #facc15;
+  font-size: 34rpx;
+  font-weight: 800;
+}
+
+.metric-label {
+  margin-top: 6rpx;
+  color: #82968b;
+  font-size: 20rpx;
+}
+

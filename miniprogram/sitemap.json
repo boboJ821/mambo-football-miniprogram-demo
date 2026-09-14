@@ -1,0 +1,10 @@
+{
+  "desc": "Portfolio demo sitemap",
+  "rules": [
+    {
+      "action": "allow",
+      "page": "*"
+    }
+  ]
+}
+

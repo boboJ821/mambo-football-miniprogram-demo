@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "比赛预测",
+  "usingComponents": {
+    "match-card": "/components/match-card/match-card"
+  }
+}
